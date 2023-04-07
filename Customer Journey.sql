@@ -11,10 +11,8 @@ easier! */
 
 # Distinct Customer_id in the Data-Set
 
-select
-    COUNT(DISTINCT (customer_id)) AS 'Unique Customers'
-FROM
-    subscriptions;
+select count(distinct (customer_id)) AS 'Unique Customers'
+from subscriptions;
 
 # Customer 1
 select customer_id, plan_id,plan_name, start_date
